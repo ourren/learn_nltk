@@ -1,2 +1,21 @@
-# learn_nltk
-learn nltk for beginners
+### 关于
+
+该项目主要帮助新手熟悉nltk库的使用，主要包含如下几部分内容：
+
+	NLTK简介与环境搭建；
+	NLTK之分句；
+	NLTK之分词；
+	NLTK之句子分析；
+	NLTK之词性分析；
+	NLTK之词态分析；
+	NLTK之感情分析；
+	NLTK之关键字提取；
+	NLTK之分类算法；
+	……
+
+### 组成
+
+项目主要有文章和代码两部分组成：
+
+	/post #文章目录
+	/code #代码目录
