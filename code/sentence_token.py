@@ -5,6 +5,7 @@
 Copyright (c) 2013-2014 ourren (http://blog.ourren.com/)
 author: ourren <i@ourren.com>
 """
+from nltk.tokenize import sent_tokenize
 
 def sentence_split(str_centence):
     list_ret = list()
@@ -17,9 +18,14 @@ def sentence_split(str_centence):
             list_ret.append(s_str)
     return list_ret
 
+def sentence_token_nltk(str):
+    sent_tokenize_list = sent_tokenize(str)
+    return sent_tokenize_list
+
 def main():
     sentence = "I saw Annie who is Dr. Ting's PA and she is amazing!! She was extremely knowledgeable and thorough and knew my skin type right away. She is the only Dr. Who's been able to completely clear up my skin and their product lines are incredible and affordable!!! I will not go to anyone but her now. I recommend seeing Annie for any skin condition- they have every laser there is for every skin disorder there is including broken capillaries! Love this office!"
     print sentence_split(sentence)
+    print sentence_token_nltk(sentence)
 
 if __name__ == '__main__':
     main()
